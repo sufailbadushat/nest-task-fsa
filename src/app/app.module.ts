@@ -9,6 +9,7 @@ import { EmployeeRegComponent } from './employee-reg/employee-reg.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
+import { AdminNavComponent } from './admin-nav/admin-nav.component';
 
 
 let myRoute:Routes=[
@@ -34,7 +35,8 @@ let myRoute:Routes=[
     AppComponent,
     EmployeeRegComponent,
     AdminLoginComponent,
-    EmployeeLoginComponent
+    EmployeeLoginComponent,
+    AdminNavComponent
   ],
   imports: [
     BrowserModule,

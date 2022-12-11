@@ -7,9 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmployeeRegComponent } from './employee-reg/employee-reg.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
 
 
 let myRoute:Routes=[
+  {
+    path:"",
+    component:AdminLoginComponent
+  },
   {
     path:"addEmployee",
     component:EmployeeRegComponent
@@ -19,7 +24,8 @@ let myRoute:Routes=[
 @NgModule({
   declarations: [
     AppComponent,
-    EmployeeRegComponent
+    EmployeeRegComponent,
+    AdminLoginComponent
   ],
   imports: [
     BrowserModule,

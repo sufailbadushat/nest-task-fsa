@@ -17,6 +17,9 @@ let myRoute:Routes=[
     component:AdminLoginComponent
   },
   {
+    path:"adminLogin",
+    component:AdminLoginComponent
+  },  {
     path:"addEmployee",
     component:EmployeeRegComponent
   },

@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { EmployeeRegComponent } from './employee-reg/employee-reg.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 
 
 let myRoute:Routes=[
@@ -18,6 +19,10 @@ let myRoute:Routes=[
   {
     path:"addEmployee",
     component:EmployeeRegComponent
+  },
+  {
+    path:"employeeLogin",
+    component:EmployeeLoginComponent
   }
 ]
 
@@ -25,7 +30,8 @@ let myRoute:Routes=[
   declarations: [
     AppComponent,
     EmployeeRegComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    EmployeeLoginComponent
   ],
   imports: [
     BrowserModule,
